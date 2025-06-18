@@ -48,6 +48,221 @@
     .btn-close:hover {
       background: rgba(0,0,0,0.9);
     }
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+}
+
+.hero {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-image: url('https://kostkoweradio.github.io/strona-glowna/0yg11h.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  color: white;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.text-box {
+  max-width: 600px;
+}
+
+.text-box h1 {
+  font-size: 3em;
+  margin-bottom: 0.3em;
+}
+
+.text-box h2 {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+}
+
+.text-box p {
+  font-size: 1.3em;
+}
+
+.opis {
+  padding: 3em 5%;
+  background: #f0f0f0;
+}
+
+.opis h2 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.opis p {
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Sekcja podcasty */
+.podcasty {
+  max-width: 900px;
+  margin: 40px auto 60px auto;
+  padding: 0 20px;
+}
+
+.podcasty h2 {
+  font-size: 2rem;
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.podcast-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.podcast {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.podcast h3 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 1.3rem;
+}
+
+.podcast p {
+  margin: 0 0 1em 0;
+  font-size: 1rem;
+}
+
+.podcast a {
+  color: #007acc;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.podcast a:hover {
+  text-decoration: underline;
+}
+
+/* Opcjonalnie responsywność */
+@media (max-width: 600px) {
+  .podcasty {
+    padding: 0 10px;
+  }
+
+  .podcast h3 {
+    font-size: 1.1rem;
+  }
+
+  .podcast p {
+    font-size: 0.9rem;
+  }
+}
+
+.radio-na-zywo h2 {
+  text-decoration: none; /* upewniamy się, że to nie jest link */
+  cursor: default;       /* zwykły kursor, nie wskazujący na link */
+  margin-bottom: 20px;
+  pointer-events: none !important;
+  user-select: text; /* żeby można było zaznaczać tekst normalnie */
+}
+
+/* Nowy styl przycisku "Radio na żywo" */
+.btn-radio {
+  background: linear-gradient(45deg, #ff4081, #e91e63);
+  color: white;
+  padding: 18px 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(233, 30, 99, 0.6);
+  transition: background 0.4s ease, box-shadow 0.3s ease, transform 0.2s ease;
+  user-select: none;
+}
+
+.btn-radio:hover {
+  background: linear-gradient(45deg, #e91e63, #c2185b);
+  box-shadow: 0 8px 20px rgba(194, 24, 91, 0.8);
+  transform: scale(1.05);
+}
+
+.btn-radio:active {
+  transform: scale(0.97);
+  box-shadow: 0 4px 12px rgba(194, 24, 91, 0.7);
+}
+
+/* MENU GÓRNE */
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background-color: #222;
+  color: white;
+  font-family: 'Poppins', Arial, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 60px; /* wysokość półpaska */
+}
+
+.menu-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.menu-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.menu-right {
+  display: flex;
+  gap: 25px;
+}
+
+.menu-link {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.menu-link:hover {
+  color: #e91e63;
+  text-decoration: underline;
+}
+
+/* Responsywność na małe ekrany */
+@media (max-width: 600px) {
+  .main-menu {
+    flex-direction: column;
+    gap: 10px;
+    height: auto;
+  }
+  .menu-right {
+    gap: 15px;
+  }
+    }
   </style>
 </head>
 <body>
