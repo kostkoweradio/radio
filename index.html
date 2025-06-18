@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Radio - Kostkowe Radio</title>
+  <link rel="stylesheet" href="../style.css?v=1" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <!-- Favicon -->
+  <link rel="icon" href="../icon.png" type="image/png" />
+  <style>
+    /* Dodatkowe style dla reklamy i przycisku */
+    .reklama-container {
+      position: relative;
+      max-width: 600px;
+      margin: 50px auto;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    }
+
+    .reklama-container img {
+      width: 100%;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .btn-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.7);
+      color: white;
+      border: none;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+      line-height: 30px;
+      text-align: center;
+      transition: background 0.3s ease;
+      user-select: none;
+    }
+
+    .btn-close:hover {
+      background: rgba(0,0,0,0.9);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="main-menu">
+    <div class="menu-left">
+      <img src="../icon.png" alt="Logo Kostkowe Radio" class="menu-logo" />
+      <span class="menu-title">Kostkowe Radio</span>
+    </div>
+    <nav class="menu-right">
+      <a href="../wiadomosci/index.html" class="menu-link">Wiadomości</a>
+      <a href="../ramowka/index.html" class="menu-link">Ramówka</a>
+      <a href="../informacje/index.html" class="menu-link">Informacje</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="reklama-container">
+      <img src="https://kostkoweradio.github.io/radio/reklama.jpg" alt="Reklama" />
+      <button class="btn-close" aria-label="Zamknij reklamę" onclick="window.location.href='https://radioking.pl'">&times;</button>
+    </section>
+  </main>
+
+</body>
+</html>
